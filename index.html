@@ -3,32 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oklahoma Auto Finance · Best Deals on Cars & Loans [OKLAHOMA]</title>
+    <title>Oklahoma Auto Finance · Car Cursor & No Blue Highlight</title>
     
     <!-- Meta Tags -->
     <meta name="description" content="Top deals on car financing in Oklahoma! Affordable cars, low APR loans, and special offers. No sign-up, just text us. Your next ride starts here.">
     
-    <!-- Open Graph / Facebook – using NEW universal image -->
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.oklahomafinance.store">
     <meta property="og:title" content="Affordable Car Financing Oklahoma – Best Deals">
     <meta property="og:description" content="Drive away with the most affordable car financing in Oklahoma. Low rates, pre-approvals, and special discounts. Text us for instant details!">
-    <meta property="og:image" content="https://github.com/TitanBusinessPros/Cars/raw/main/logo.png">
+    <meta property="og:image" content="https://github.com/TitanBusinessPros/Cars/raw/main/New-Logo.png">
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://www.oklahomafinance.store">
     <meta name="twitter:title" content="Oklahoma Car Financing – Low Rates & Deals">
     <meta name="twitter:description" content="Find affordable cars and financing in Oklahoma. No sign-up, just text. We'll hook you up with the best loan deals.">
-    <meta name="twitter:image" content="https://github.com/TitanBusinessPros/Cars/raw/main/logo.png">
+    <meta name="twitter:image" content="https://github.com/TitanBusinessPros/Cars/raw/main/New-Logo.png">
     
-    <!-- Favicon now NEW car logo -->
-    <link rel="icon" type="image/png" href="https://github.com/TitanBusinessPros/Cars/raw/main/logo.png">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://github.com/TitanBusinessPros/Cars/raw/main/New-Logo.png">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Fonts: Poppins (body), Bebas Neue (headings), Oswald (accents) – readable & cool -->
+    <!-- Fonts: Poppins, Bebas Neue, Oswald -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Bebas+Neue&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
     
     <style>
@@ -36,16 +36,33 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            
+            /* 🚫 STOP BLUE HIGHLIGHT ON CLICK / SELECTION */
+            -webkit-tap-highlight-color: transparent;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
 
-        /* Car cursor (SVG with car emoji) */
+        :focus {
+            outline: 0;
+        }
+
+        /* ========== CUSTOM MOUSE CURSOR – CAR LOGO (REPLACES ARROW) ========== */
+        html, body, * {
+            /* Force cursor on all elements – using the car logo. 
+               If the image fails to load or is too large, falls back to auto.
+               Hotspot at 16,16 (try to center). */
+            cursor: url('https://github.com/TitanBusinessPros/Cars/raw/main/New-Logo.png') 16 16, auto !important;
+        }
+
         body {
             font-family: 'Poppins', sans-serif;
             background: #f0c45a;
             background-image: repeating-linear-gradient(45deg, #ffdb7e 0px, #ffdb7e 20px, #f7b32b 20px, #f7b32b 40px);
             color: #1a2c3a;
             line-height: 1.5;
-            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><text x="2" y="24" font-size="28">🚗</text></svg>') 16 16, auto;
         }
 
         .container {
@@ -116,6 +133,9 @@
             background: white;
             transform: rotate(1deg);
             filter: drop-shadow(10px 15px 0 #4d2600);
+            -webkit-user-drag: none;
+            user-drag: none;
+            pointer-events: none;
         }
 
         .main-header {
@@ -211,6 +231,7 @@
             object-fit: cover;
             opacity: 0.95;
             border-radius: 20px 20px 0 0;
+            pointer-events: none;
         }
 
         .tool-content {
@@ -256,6 +277,7 @@
             box-shadow: 0 8px 0 #ba2d7a, 0 10px 10px black;
             transition: 0.05s linear;
             text-transform: uppercase;
+            -webkit-tap-highlight-color: transparent;
         }
 
         .btn:hover {
@@ -396,7 +418,6 @@
             margin-top: 20px;
         }
 
-        /* CAR-THEMED TOP BANNER – checkered flag stripes */
         .top-banner {
             background: repeating-linear-gradient(45deg, #000 0px, #000 20px, #fff 20px, #fff 40px);
             padding: 15px;
@@ -418,22 +439,20 @@
     </style>
 </head>
 <body>
-    <!-- TOP BANNER – car-themed checkered flag -->
     <div class="top-banner">
         <span class="blink">🏁 FINANCE DEALS 🏁</span> · HONK IF YOU LOVE SAVINGS 🚗
     </div>
 
     <div class="logo-container">
         <div class="company-logo">
-            <!-- ALL IMAGES REPLACED WITH NEW CAR LOGO -->
-            <img src="https://github.com/TitanBusinessPros/Cars/raw/main/logo.png" alt="Oklahoma Auto Finance Logo">
+            <img src="https://github.com/TitanBusinessPros/Cars/raw/main/New-Logo.png" alt="Oklahoma Auto Finance Logo" draggable="false">
         </div>
     </div>
 
     <header class="main-header">
         <div class="container">
             <marquee behavior="alternate" scrollamount="12">🔥 Oklahoma’s Best Car Financing & Affordable Auto Deals 🔥</marquee>
-            <p>Welcome to Oklahoma Auto Finance – your one-stop cyber lot for the most affordable car loans and deals in the state. We connect you with local lenders and dealers offering low APR, zero down, and sweet discounts. <br><strong>Just text us the coupon code and your name – we'll text back the details within 12 hours!</strong></p>
+            <p>(The deals listed on this website are just placeholders & are not real deals or offers.) Welcome to The Car Coupon Store – your one-stop cyber lot for the most affordable car loans and deals in the state. We connect you with local lenders and dealers offering low APR, zero down, and sweet discounts. <br><strong>Just text us the coupon code and your name – we'll text back the details within 2 hours!</strong></p>
         </div>
     </header>
 
@@ -452,25 +471,23 @@
         </div>
     </section>
 
-    <!-- TEXT METHOD SECTION (car financing) -->
     <section class="text-method-section" id="text-method">
         <div class="container">
-            <h2 class="text-method-title">📲 TEXT FOR PRE-APPROVAL</h2>
+            <h2 class="text-method-title">📲 TEXT FOR Coupon Deal</h2>
             <div class="text-method-box">
                 <p>🚗 No forms, no credit check hassles – just text!</p>
                 <p>Send your <strong>name</strong> and the <strong>coupon code</strong> (e.g., F‑1) to:</p>
                 <div class="phone-big">405-998-8232</div>
-                <p>We’ll text you back with lender details, APR, and how to claim.</p>
+                <p>We’ll text you back with the name of the car dealership & sales person.</p>
                 <div class="hours">
-                    <i class="fas fa-clock"></i> Finance hotline: <strong>9am – 9pm daily</strong>.<br>
+                    <i class="fas fa-clock"></i> Text Hotline!: <strong>9am – 9pm daily</strong>.<br>
                     Text after hours? We'll reply next business day – promise!
                 </div>
-                <p style="font-size:1.2rem; margin-top:30px;">🚗 Your car-finance crew is standing by (with calculators)!</p>
+                <p style="font-size:1.2rem; margin-top:30px;">🚗 Your car-coupon crew in Tulsa is standing by (with calculators)!</p>
             </div>
         </div>
     </section>
 
-    <!-- Another banner (car-themed) -->
     <div class="container">
         <div style="background:#ee82ee; padding:10px; text-align:center; border:10px ridge white; margin:30px 0;">
             <span style="font-size:2.5rem;">📞 CALL NOW? nah – just text us 🚘</span>
@@ -481,26 +498,25 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <h3>Oklahoma Auto Finance</h3>
-                    <p>Your local source for affordable car loans and deals in Oklahoma. We hook you up with the lowest rates – or we'll eat our steering wheels.</p>
+                    <h3>The Car Coupon Store in Tulsa</h3>
+                    <p>Your local car friends advocating for affordable car finiancing and deals in Oklahoma. We hook you up with the lowest rates we can find – or we'll eat our steering wheels.</p>
                 </div>
                 <div class="footer-contact">
                     <h4 style="color:#ffa500;">Contact & Location (we're mobile)</h4>
                     <div class="contact-info">
                         <div class="contact-item"><i class="fas fa-phone"></i> 405-998-8232</div>
                         <div class="contact-item"><i class="fas fa-map-marker-alt"></i> Tulsa, Oklahoma (behind the donut shop, same spot)</div>
-                        <!-- Email and website removed per request -->
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 Oklahoma Auto Finance. All rights reserved. | Proudly serving Oklahoma drivers | 🦺 Check your credit – or don't, we still love ya</p>
+                <p>© 2026 Car Coupon Store Of Tulsa. All rights reserved. | Proudly serving Oklahoma drivers | 🦺 Check your credit – or don't, we still love ya</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // CAR FINANCING DEALS DATA (all using the universal new image)
+        // CAR FINANCING DEALS DATA (all using the universal car logo)
         const carFinanceDeals = [
             { title: "0% APR for 60 months", description: "On select new cars. Must qualify through participating dealers. Coupon Code F-1" },
             { title: "$500 Down Payment Assistance", description: "First-time buyers get $500 toward down payment. Easy approval. Coupon Code F-2" },
@@ -514,8 +530,7 @@
             { title: "72-Month Low Payment", description: "Extended terms with rates starting at 4.25% APR. Keep payments low. Coupon Code F-10" }
         ];
 
-        // Universal image URL (car logo)
-        const universalImage = "https://github.com/TitanBusinessPros/Cars/raw/main/logo.png";
+        const universalImage = "https://github.com/TitanBusinessPros/Cars/raw/main/New-Logo.png";
 
         function generateDealCards() {
             const toolsGrid = document.getElementById('toolsGrid');
@@ -525,7 +540,7 @@
                 card.className = 'tool-card';
                 card.innerHTML = `
                     <div class="tool-image">
-                        <img src="${universalImage}" alt="Car finance deal">
+                        <img src="${universalImage}" alt="Car finance deal" draggable="false">
                     </div>
                     <div class="tool-content">
                         <h3>${deal.title}</h3>
@@ -539,61 +554,21 @@
             });
         }
 
-        // ---------- RELIABLE CAR HORN using Web Audio API (works every time) ----------
-        let audioContext = null;
-
-        function playHonk() {
-            try {
-                // Initialize AudioContext on first user interaction
-                if (!audioContext) {
-                    audioContext = new (window.AudioContext || window.webkitAudioContext)();
-                }
-                if (audioContext.state === 'suspended') {
-                    audioContext.resume().then(() => {
-                        createHonk();
-                    }).catch(e => console.log('Resume failed', e));
-                } else {
-                    createHonk();
-                }
-            } catch (e) {
-                console.log('Web Audio not supported', e);
+        // Mouse sound remains unchanged
+        let mouseAudio = null;
+        function playMouseSound() {
+            if (!mouseAudio) {
+                mouseAudio = new Audio('https://github.com/TitanBusinessPros/Cars/raw/main/Mouse-Audio.m4a');
             }
+            mouseAudio.pause();
+            mouseAudio.currentTime = 0;
+            mouseAudio.play().catch(e => console.log('Audio play issue:', e));
         }
 
-        function createHonk() {
-            if (!audioContext) return;
-            // Create two oscillators for a rich horn sound
-            const osc1 = audioContext.createOscillator();
-            const osc2 = audioContext.createOscillator();
-            const gainNode = audioContext.createGain();
-            
-            osc1.type = 'sawtooth';
-            osc2.type = 'triangle';
-            osc1.frequency.value = 220; // A3
-            osc2.frequency.value = 440; // A4 (harmonics)
-            
-            // Connect both oscillators to gain
-            osc1.connect(gainNode);
-            osc2.connect(gainNode);
-            gainNode.connect(audioContext.destination);
-            
-            // Envelope: short attack, quick decay (like a honk)
-            gainNode.gain.setValueAtTime(0, audioContext.currentTime);
-            gainNode.gain.linearRampToValueAtTime(0.3, audioContext.currentTime + 0.02);
-            gainNode.gain.exponentialRampToValueAtTime(0.001, audioContext.currentTime + 0.3);
-            
-            osc1.start(audioContext.currentTime);
-            osc2.start(audioContext.currentTime);
-            osc1.stop(audioContext.currentTime + 0.3);
-            osc2.stop(audioContext.currentTime + 0.3);
-        }
-
-        // On any click: play horn (no background music)
         document.addEventListener('click', function() {
-            playHonk();
+            playMouseSound();
         });
 
-        // Initialize page
         document.addEventListener('DOMContentLoaded', function() {
             generateDealCards();
 
@@ -603,6 +578,8 @@
                     document.querySelector('#text-method').scrollIntoView({ behavior: 'smooth' });
                 });
             });
+
+            console.log('🚗 Blue highlight disabled & cursor set to car logo. If arrow still shows, your image may be too large – use a small PNG (32x32) or .cur file.');
         });
     </script>
 </body>
